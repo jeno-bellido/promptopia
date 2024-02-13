@@ -6,13 +6,10 @@ const Home = () => {
         <h1 className="head_text text-center">
             Discover & Share
             <br className="max-md:hidden" />
-            <span className="orange_gradient text-center"> AI-Powered Prompts </span>
+            <span className="orange_gradient text-center"> Useful Contents </span>
         </h1>
         <p className="desc text-center">
-            Promptopia is an open-source AI promoting tool for modern world to discover,
-            create, and share creative prompts.
-        </p>
-
+        ContentSite is a dedicated platform that facilitates the exchange and exploration of content pertaining to a wide array of topics. It serves as a repository for both general knowledge and specialized advice, fostering a dynamic community of learning and discovery.        </p>
         <Feed />
     </section>
   )
