@@ -8,9 +8,8 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <span className="blue_gradient">{type} Post </span> 
       </h1>
       <p className="desc text-left max-w-md">
-        {type} and share amazing prompts with the 
-        world and let your imagination run wild with 
-        AI-powered platform.
+        {type} and share amazing content with the 
+        world.
       </p>
       <form 
       onSubmit={handleSubmit}
@@ -18,13 +17,13 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
-            Your AI Prompt
+            Your Post Content
           </span>
 
           <textarea
             value={post.prompt}
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
-            placeholder="Write your AI Prompt here..."
+            placeholder="Write your post content here..."
             required
             className="form_textarea"
           />
