@@ -4,17 +4,15 @@
 // in the search bar of browser, we have to put the id on the last
 // slash. for instance http://localhost:3000/update-prompt/[id], so we get that id
 // by using useSearchcParams
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
 import Form from '@components/Form';
-import { data } from 'autoprefixer';
 
 const EditPrompt = () => {
     const router = useRouter();
 
-    const searchParams = useSearchParams();
-    const promptId = searchParams.get('id');
+    const { id: promptId } = router.query;
 
     const [submitting, setSubmitting] = useState(false);
     const [post, setPost] = useState({
